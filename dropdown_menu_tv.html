@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      .dropbtn_select_model {
+        background-color: white;
+        color: black;
+        padding: 12px;
+        font-size: 16px;
+        cursor: pointer;
+        border: 1px solid grey;
+        border-radius: 18px;
+        display: flex;
+        justify-content: space-evenly;
+        width: 200px;
+      }
+
+      .dropbtn:hover,
+      .dropbtn:focus {
+        background-color: #2980b9;
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f130;
+        min-width: 100%;
+        overflow: auto;
+        z-index: 1;
+        border-radius: 14px;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        margin: 1px;
+        border-bottom: 1px solid #f1f1f1;
+      }
+      span#straight_line {
+        padding: 0;
+        position: absolute;
+        font-size: 27px;
+        top: 5px;
+        right: 60px;
+      }
+
+      .dropdown a:hover {
+        background-color: rgba(243, 243, 243, 0.856);
+      }
+
+      .show {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn_select_model">
+        Select Model <span id="straight_line"> | </span>
+        <span id="arrows_down">&#9660;</span>
+      </button>
+      <div id="myDropdown" class="dropdown-content">
+        <a
+          href="https://aiwaindia.myshopify.com/products/aiwa-magnifiq-80-cm-32-inches-hd-ready-smart-android-led-tv-a32hdx1-black-2022-model-powered-by-android-11/"
+          >A32HDX1 80cm</a
+        >
+        <a
+          href="https://aiwaindia.myshopify.com/products/aiwa-magnifiq-108-cm-43-inches-hd-ready-smart-android-led-tv-a43fhdx1-black-2022-model-powered-by-android-11"
+          >A43FHDX1 108 cm</a
+        >
+        <a
+          href="https://aiwaindia.myshopify.com/products/aiwa-magnifiq-126-cm-50-inches-hd-ready-smart-android-led-tv-a50uhdx3-black-2022-model-powered-by-android-11"
+          >A43UHDX3 108 cm</a
+        >
+        <a href="java">A50UHDX3 126 cm</a>
+        <a
+          href="https://aiwaindia.myshopify.com/products/aiwa-magnifiq-139-cm-55-inches-hd-ready-smart-android-led-tv-a55uhdx2-black-2022-model-powered-by-android-11"
+          >A55UHDX2 139 cm</a
+        >
+        <a
+          href="https://aiwaindia.myshopify.com/products/aiwa-magnifiq-139-cm-55-inches-hd-ready-smart-android-led-tv-a55uhdx3-black-2022-model-powered-by-android-11"
+          >A55UHDX3 139 cm</a
+        >
+        <a
+          href="https://aiwaindia.myshopify.com/products/aiwa-magnifiq-164-cm-65-inches-hd-ready-smart-android-led-tv-a65uhdx2-black-2022-model-powered-by-android-11"
+          >A65UHDX2 164 cm</a
+        >
+        <!-- <a href="#contact">Contact</a> -->
+      </div>
+    </div>
+
+    <script>
+      /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches(".dropbtn_select_model")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      .dropbtn_select_model {
+        background-color: white;
+        color: black;
+        padding: 12px;
+        font-size: 16px;
+        cursor: pointer;
+        border: 1px solid grey;
+        border-radius: 18px;
+        display: flex;
+        justify-content: space-evenly;
+        width: 200px;
+      }
+
+      .dropbtn:hover,
+      .dropbtn:focus {
+        background-color: #2980b9;
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f130;
+        min-width: 100%;
+        overflow: auto;
+        z-index: 1;
+        border-radius: 14px;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        margin: 1px;
+        border-bottom: 1px solid #f1f1f1;
+      }
+      span#straight_line {
+        padding: 0;
+        position: absolute;
+        font-size: 27px;
+        top: 5px;
+        right: 60px;
+      }
+
+      .dropdown a:hover {
+        background-color: rgba(243, 243, 243, 0.856);
+      }
+
+      .show {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dropdown">
+      <button onclick="myFunction_speaker()" class="dropbtn_select_model">
+        Select Model <span id="straight_line"> | </span>
+        <span id="arrows_down">&#9660;</span>
+      </button>
+      <div id="myDropdown123" class="dropdown-content">
+        <a
+          href="https://aiwaindia.myshopify.com/products/mi-x-150-retro-plus-x"
+          >MI-X 150 Retro Plus X</a
+        >
+        <a
+          href="https://aiwaindia.myshopify.com/products/sbx-350-j"
+          >SBX-350 J</a
+        >
+        <a
+          href="https://aiwaindia.myshopify.com/products/rs-x-60-diviner-ace"
+          >RS-X 60 Diviner Ace</a
+        >
+        <a
+          href="https://aiwaindia.myshopify.com/products/mi-x330"
+          >MI-X330</a
+        >
+        <a
+          href="https://aiwaindia.myshopify.com/products/mi-x-450-pro-enigma-rose-gold"
+          >MI-X 450 Pro Enigma (Rose Gold)</a
+        >
+        <a
+          href="https://aiwaindia.myshopify.com/products/sb-x30-black"
+          >SB-X30 (Black)</a>
+
+          <a
+          href="https://aiwaindia.myshopify.com/products/sb-x-350-a"
+          >SBX-350 A</a>
+
+          <a
+          href="https://aiwaindia.myshopify.com/products/sb-x30-white"
+          >SB-X30 (White)</a>
+        >
+
+      </div>
+    </div>
+
+    <script>
+
+      function myFunction_speaker() {
+        document.getElementById("myDropdown123").classList.toggle("show");
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches(".dropbtn_select_model")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
+    </script>
+  </body>
+</html>

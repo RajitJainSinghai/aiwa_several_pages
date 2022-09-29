@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: bahnschrift,sans-serif!important;
+}
+/********************Rotating Tv******************/
+
+div.rotating_img, div.rotating_img_1 {
+	perspective: 500px;	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    width: 500px;
+}
+div.rotating_img_1 {
+    margin-top: 45px;
+    width: 30%;
+}
+
+.square {
+	width: 500px;
+	transform: rotateY(45deg);
+	animation: rotateAnimation 8s linear infinite;
+}
+.square2 {
+	width: 350px;
+	transform: rotateY(45deg);
+	animation: rotateAnimation 8s linear infinite;
+}
+
+@keyframes rotateAnimation {
+	from {transform: rotateY(45deg);}
+	to {transform: rotateY(225deg);}
+}
+img {
+    width: 100%;
+}
+
+/********** regalacy**************/
+section.aiwa_tv_eperience_section_1{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    width: 100%;
+    align-items: start;
+    margin-top: 80px;
+    justify-content: space-around;
+}
+section.aiwa_tv_eperience_section_2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: start;
+    margin-top: 80px;
+    justify-content: space-around;
+}
+p#aiwa_tv_experience_heading1, p#aiwa_tv_experience_heading_single, p#aiwa_tv_experience_heading2 {
+    color: #6d6d6d;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+p.aiwa_tv_experience_innerText1, p.aiwa_tv_experience_innerText_single, p.aiwa_tv_experience_innerText_relay, p.aiwa_tv_experience_innerText_card_1  {
+    font-size: 1.7rem;
+    font-weight: 300;
+    margin-top: 15px;
+    text-align: justify;
+
+}
+p.aiwa_tv_experience_innerText_relay {
+    margin: 15px 50px 0 100px;
+}
+.aiwa_tv_experience_text1, .aiwa_tv_experience_text2 {
+    width: 40vw;;
+    text-align: justify;
+}
+
+img.Aiwa_tv_experience_logo1 {
+    width: 130px;
+    margin: 0 30px 0 0;
+    float: left;
+}
+img.Aiwa_tv_experience_logo2 {
+    width: 180px;
+    float: right;
+}
+img#Single_img_form {
+    width: 100%;
+}
+.Aiwa_tv_experience_single_img, .aiwa_tv_experience_text_single, .Aiwa_tv_experience_single_img_1, .Aiwa_tv_experience_single_img_2   {
+    width: 90%;
+    margin: 30px auto;
+}
+.Aiwa_tv_experience_single_img_2 {
+    width: 100%;
+    background: #f5f4f7;
+
+}
+img.Aiwa_tv_experience_logo_single {
+    width: 250px;
+}
+img.Aiwa_tv_experience_logo_single {
+    width: 250px;
+    position: relative;
+    right: 25px;
+}
+.Aiwa_tv_experience_single_img_1 {
+    margin-top: 95px;
+}
+img.Aiwa_tv_experience_logo3 {
+    width: 90px;
+    margin: 0 30px 0 0;
+    float: left;
+}
+img.Aiwa_tv_experience_logo4 {
+    width: 160px;
+}
+p#aiwa_tv_experience_heading2 {
+    margin-left: 125px;
+}
+.aiwa_tv_experience_text_single_img {
+    margin-top: 60px;
+}
+.Aiwa_tv_experience_single_img_3 {
+    width: 50%;
+    margin: 20px auto;
+}
+section.aiwa_tv_experience_Fromal_cards {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+.aiwa_tv_experience_card1 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 350px;
+    height: 400px;
+    text-align: center;
+    border-radius: 40px;
+    background: #f5f4f7;
+    padding: 0 20px;
+    
+
+}
+img.aiwa_cardIcon {
+    width: 150px;
+}
+.Aiwa_tv_experience_single_img_brochure {
+    width: 100%;
+    border: 1px solid #c7c7c7;
+}
+.Aiwa_brochure {
+    width: 100%;
+    /* margin: 0 auto; */
+    text-align: center;
+    margin-top: 20px;
+}
+a.Aiwa_download_brochure {
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    background-color: #f5f4f7;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+}
+.square123 {
+    width: 350px;
+}
+.aiwa_tv_experience_text2 {
+    width: 40vw;
+    text-align: justify;
+    margin-top: 80px;
+}
+
+@media screen and (max-width: 900px) {
+    section.aiwa_tv_eperience_section_1, section.aiwa_tv_eperience_section_2 {
+        margin-top: 0;
+    }
+    .aiwa_tv_experience_text1, .aiwa_tv_experience_text2 {
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+        margin: 30px auto;
+    }
+    p.aiwa_tv_experience_innerText1, p.aiwa_tv_experience_innerText_single, p.aiwa_tv_experience_innerText_relay, p.aiwa_tv_experience_innerText_card_1 {
+        font-size: 20px;
+        font-weight: 300;
+        margin: 10px 0;
+        /* letter-spacing: 2px; */
+        text-align: justify;
+    }
+    img.Aiwa_tv_experience_logo1 {
+        width: 130px;
+        margin: 0 0px 0 0;
+        float:none;
+    }
+    img.Aiwa_tv_experience_logo2 {
+        width: 180px;
+        float: none;
+    }
+    .aiwa_tv_experience_text_single_img {
+        margin-top: 0px;
+        text-align: center;
+    }
+    .aiwa_tv_experience_card1 {
+        height: auto;
+        margin: 20px 0;
+    
+    }
+    .Aiwa_tv_experience_single_img_brochure {
+        display: none;
+    }
+    p.aiwa_tv_experience_innerText_card_1, p.aiwa_tv_experience_innerText_relay {
+        text-align: justify;
+        padding: 10px;
+    }
+    .square, .square2 {
+        width: 250px;
+    }
+    p#aiwa_tv_experience_heading1, p#aiwa_tv_experience_heading_single, p#aiwa_tv_experience_heading2 {
+        color: #6d6d6d;
+        font-size: 25px;
+        font-weight: 400;
+    }
+    div.rotating_img_1 {
+        margin-top: 0;
+        width: 60%;
+    }
+    .Aiwa_tv_experience_single_img_1 {
+        /* margin-top: 95px; */
+        margin: 0 auto;
+    }
+    img.Aiwa_tv_experience_logo3 {
+        float: none;
+        margin: 0;
+    }
+    p#aiwa_tv_experience_heading2 {
+        margin-left: 0;
+    }
+    .Aiwa_img_division {
+        margin: 15px;
+        display: flex;
+    }
+
+}
